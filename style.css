@@ -171,16 +171,59 @@ main .container:nth-child(4) .row .col-12 h3 {
 
 main .container:nth-child(4) .row .col-12 a {
     padding: 15px 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     display: inline-block;
     z-index: 10;
     font-size: 18px;
 }
 
 /* FOOTER  */
+footer {
+    background-color: #23272A;
+    color: white;
+}
+
+footer .row .col-4 .footer__language h5 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #5865F2;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+footer .row .col-4 .footer__language select {
+    margin-bottom: 20px;
+}
+
+footer .row .col-4 .footer__social i {
+    padding: 5px;
+}
+
+footer .row .col-2 .footer__link h5 {
+    color: #5865F2;
+    margin-bottom: 10px;
+}
+
+footer .row .col-2 .footer__link ul {
+    list-style-type: none;
+}
+
+footer .row .col-2 .footer__link li {
+    margin-bottom: 10px;
+}
+
+footer .row:first-child {
+    border-bottom: 2px solid #5865F2;
+    margin-bottom: 20px;
+}
+
+
+
 #right {
     float: right;
 }
+
+
 
 
 
