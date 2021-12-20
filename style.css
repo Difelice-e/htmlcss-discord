@@ -21,7 +21,7 @@ a {
     clear: both;
 }
 
-/* PAGINA  */
+/* DIMENSIONAMENTO PAGINA  */
 .container {
     width: 960px;
     margin: 0 auto;
@@ -50,6 +50,7 @@ a {
     text-align: center;
 }
 
+/* FONT-SIZE TESTI RIPETUTI  */
 h1 {
     font-size: 50px;
 }
@@ -62,9 +63,15 @@ p {
     font-size: 20px;
 }
 
+/* BOTTONI  */
 .button__white {
     background-color: white;
     color: black;
+}
+
+.button__white:hover {
+    color: #5865F2;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button__black {
@@ -72,9 +79,19 @@ p {
     color: white;
 }
 
+.button__black:hover {
+    background-color: rgb(54, 54, 54);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 .button__blue {
     background-color: #5865F2;
     color: white;
+}
+
+.button__blue:hover {
+    background-color: #737ef3;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* HEADER  */
@@ -98,6 +115,10 @@ header .header__menu a {
     color: white;
     margin: 0px 10px;
     line-height: 50px;
+}
+
+header .header__menu a:hover {
+    text-decoration: underline;
 }
 
 header .header__button {
@@ -212,12 +233,23 @@ footer .row .col-2 .footer__link li {
     margin-bottom: 10px;
 }
 
+footer .row .col-2 .footer__link a:hover {
+    text-decoration: underline;
+}
+
 footer .row:first-child {
     border-bottom: 2px solid #5865F2;
     margin-bottom: 20px;
 }
 
-
+footer .row .col-2 .footer__button a {
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    z-index: 10;
+    font-size: 18px;
+    float: right;
+}
 
 #right {
     float: right;
