@@ -7,6 +7,7 @@
 
 img {
     width: 100%;
+    display: block;
 }
 
 a {
@@ -26,11 +27,6 @@ a {
     margin: 0 auto;
 }
 
-/* HEADER  */
-header {
-    text-align: center;
-}
-
 .container .row div[class^="col"] {
     float: left;
 }
@@ -43,7 +39,6 @@ header {
     width: calc(100% - 160px - 160px);
 }
 
-/* MAIN  */
 .row .col-4 {
     width: 320px;
 }
@@ -52,6 +47,81 @@ header {
     width: 100%;
     text-align: center;
 }
+
+.button__white {
+    background-color: white;
+    color: black;
+}
+
+.button__black {
+    background-color: black;
+    color: white;
+}
+
+/* HEADER  */
+header {
+    text-align: center;
+    background-image: url("img/jumbo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .header__logo img {
+    height: 50px;   
+}
+
+header .header__menu li {
+    display: inline-block;
+}
+
+header .header__menu a {
+    color: white;
+    margin: 0px 10px;
+    line-height: 50px;
+}
+
+header .header__button {
+    height: 50px;
+    padding-top: 6px;
+}
+
+.header__button a {
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    z-index: 10;
+}
+
+header .header__jumbo {
+    color: white;
+}
+
+header .header__jumbo h1 {
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+header .header__jumbo p {
+    width: 66%;
+    margin: 0 auto 20px auto;
+    font-size: 18px;
+}
+
+header .header__jumbo a {
+    padding: 15px 20px;
+    border-radius: 30px;
+    display: inline-block;
+    z-index: 10;
+    font-size: 18px;
+}
+
+header .header__jumbo a:first-of-type {
+    margin-right: 10px;
+}
+
+/* MAIN  */
+
 
 /* FOOTER  */
 #right {
