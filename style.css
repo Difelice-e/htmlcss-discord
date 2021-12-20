@@ -43,8 +43,41 @@ header {
     width: calc(100% - 160px - 160px);
 }
 
+/* MAIN  */
+.row .col-4 {
+    width: 320px;
+}
+
+.row .col-12 {
+    width: 100%;
+    text-align: center;
+}
+
+/* FOOTER  */
+#right {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
 /* DEBUG  */
 .debug header {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.debug main {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.debug footer {
     padding: 20px;
     border: 1px solid black;
 }
