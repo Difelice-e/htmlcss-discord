@@ -23,7 +23,7 @@ a {
 
 /* PAGINA  */
 .container {
-    width: 1060px;
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -36,11 +36,13 @@ a {
 }
 
 .row .col-8 {
+    /* width: 640px; */
     width: calc(100% - 160px - 160px);
 }
 
 .row .col-4 {
-    width: 320px;
+    /* width: 320px; */
+    width: calc(100% - 640px);
 }
 
 .row .col-12 {
@@ -53,7 +55,7 @@ h1 {
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 40px;
 }
 
 p {
@@ -70,13 +72,18 @@ p {
     color: white;
 }
 
+.button__blue {
+    background-color: #5865F2;
+    color: white;
+}
+
 /* HEADER  */
 header {
     text-align: center;
     background-image: url("img/jumbo.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 header .header__logo img {
@@ -143,6 +150,32 @@ main .row .col-4 h2 {
     margin-bottom: 20px;
 }
 
+main .container:nth-child(4) .row .col-12 h2 {
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+
+main .container:nth-child(4) .row .col-12 p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main .container:nth-child(4) .row .col-12 h3 {
+    padding-top: 30px;
+    margin: 0 auto 20px auto;
+    font-size: 30px;
+    background-image: url("img/stars.svg");
+    background-size: contain;
+    width: 60%;
+}
+
+main .container:nth-child(4) .row .col-12 a {
+    padding: 15px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    z-index: 10;
+    font-size: 18px;
+}
 
 /* FOOTER  */
 #right {
