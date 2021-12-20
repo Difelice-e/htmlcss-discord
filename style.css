@@ -50,6 +50,9 @@ a {
     text-align: center;
 }
 
+main section:nth-child(even) {
+    background-color: rgba(211, 211, 211, 0.541);
+}
 /* FONT-SIZE TESTI RIPETUTI  */
 h1 {
     font-size: 50px;
