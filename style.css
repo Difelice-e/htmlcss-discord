@@ -28,19 +28,19 @@ a {
 }
 
 .container:not(header .container, footer .container) {
-    padding: 100px 0px;
+    padding: 100px 15px;
 }
 
 header .container {
-    padding: 20px 0;
+    padding: 20px 15px;
 }
 
 header .row:nth-child(2) {
-    padding: 100px 0;
+    padding: 100px 0px;
 }
 
 footer .container {
-    padding: 50px 0;
+    padding: 50px 15px;
 }
 
 .container .row div[class^="col"] {
@@ -69,44 +69,58 @@ main section:nth-child(even) {
 }
 /* FONT-SIZE TESTI RIPETUTI  */
 h1 {
-    font-size: 50px;
+    font-size: calc( 30px + 1vw );
 }
 
 h2 {
-    font-size: 40px;
+    font-size: calc( 20px + 1vw );
 }
 
 p {
-    font-size: 20px;
+    font-size: calc(10px + 0.5vw )
 }
 
 /* BOTTONI  */
-.button__white {
+.button {
+    padding: 15px;
+    border-radius: 99px;
+    display: inline-block;
+    z-index: 10;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.button.button-sm {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.button.button--white {
     background-color: white;
     color: black;
 }
 
-.button__white:hover {
+.button.button--white:hover {
     color: #5865F2;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.button__black {
+.button.button--black {
     background-color: black;
     color: white;
 }
 
-.button__black:hover {
+.button.button--black:hover {
     background-color: rgb(54, 54, 54);
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.button__blue {
+.button.button--blue {
     background-color: #5865F2;
     color: white;
 }
 
-.button__blue:hover {
+.button.button--blue:hover {
     background-color: #737ef3;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -138,15 +152,7 @@ header .header__menu a:hover {
 }
 
 header .header__button {
-    height: 50px;
-    padding: 6px 0;
-}
-
-.header__button a {
-    padding: 10px;
-    border-radius: 20px;
-    display: inline-block;
-    z-index: 10;
+    padding: 7px 0;
 }
 
 header .header__jumbo {
@@ -162,14 +168,6 @@ header .header__jumbo p {
     margin: 0 auto 20px auto;
 }
 
-header .header__jumbo a {
-    padding: 15px 20px;
-    border-radius: 30px;
-    display: inline-block;
-    z-index: 10;
-    font-size: 18px;
-}
-
 header .header__jumbo a:first-of-type {
     margin-right: 10px;
 }
@@ -178,6 +176,13 @@ header .header__jumbo a:first-of-type {
 main .row .col-8 img {
     padding-right: 15%;
 }
+
+/* main section::before {
+    content: '';
+    display: block;
+    background-image: url("img/wave.svg");
+    z-index: 100;
+} */
 
 main section:nth-child(2) .col-8 img {
     padding: 0 0 0 15%;
@@ -202,19 +207,13 @@ main section:last-child p {
 
 main section:last-child h3 {
     padding-top: 30px;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 30px auto;
     font-size: 30px;
     background-image: url("img/stars.svg");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 60%;
-}
-
-main section:last-child a {
-    padding: 15px 20px;
-    border-radius: 30px;
-    display: inline-block;
-    z-index: 10;
-    font-size: 18px;
 }
 
 /* FOOTER  */
@@ -267,11 +266,6 @@ footer .row:first-child {
 }
 
 footer .row .col-2 .footer__button a {
-    padding: 10px 20px;
-    border-radius: 30px;
-    display: inline-block;
-    z-index: 10;
-    font-size: 18px;
     float: right;
 }
 
