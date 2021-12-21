@@ -25,9 +25,6 @@ a {
 .container {
     max-width: 960px;
     margin: 0 auto;
-}
-
-.container:not(header .container, footer .container) {
     padding: 100px 15px;
 }
 
@@ -36,7 +33,7 @@ header .container {
 }
 
 header .row:nth-child(2) {
-    padding: 100px 0px;
+    padding: 80px 0px;
 }
 
 footer .container {
@@ -66,7 +63,30 @@ footer .container {
 
 main section:nth-child(even) {
     background-color: #F6F6F6;
+    position: relative;
 }
+
+main section:nth-child(even) .container {
+    padding: 50px 15px;
+}
+
+.wave-top {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.wave-bottom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    transform: rotate(180deg);
+}
+
 /* FONT-SIZE TESTI RIPETUTI  */
 h1 {
     font-size: calc( 30px + 1vw );
